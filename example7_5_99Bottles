@@ -1,0 +1,18 @@
+#7.5 99 Bottles of Beer
+puts 'would you like to hear my song? Yes, or no?'
+answer=gets.chomp
+while answer!='yes'
+  puts 'C\'mon!'
+  puts 'I sing really well. Yes, or no?'
+  answer=gets.chomp
+end
+if answer=='yes'
+bottles=99
+until bottles == 0
+beer= ' bottles of beer on the wall'
+wall= ' bottles of beer. Take one down, pass it around, ' + bottles.to_s+ ' bottles of beer on the wall...'
+puts (bottles.to_s) + (beer.to_s) 
+puts (bottles.to_s) + (wall.to_s)
+bottles-=1 
+end
+end
