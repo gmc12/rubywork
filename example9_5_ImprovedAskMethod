@@ -1,0 +1,37 @@
+#9.5 Improved Ask Method
+
+def ask question 
+ while true
+  puts question 
+   reply = gets.chomp.downcase
+    if reply=='yes'
+    return 'mmmmmm gooood!'
+  else reply =='no'
+  return 'really?....ok'
+  end
+  break
+ end
+end
+def wets_bed question
+   while true
+     puts question
+     reply=gets.chomp.downcase
+    if reply=='yes'
+     return 'what the heck is wrong with you?'.upcase
+    else reply=='no'
+     return 'I should hope not ;)'
+  end
+ break
+ end
+end
+  puts ask 'do you like burritos?'
+  puts ask 'do you like tacos?'
+  puts
+  puts 'ok, hold on a bit.'
+  puts 'let\'s try some more:'
+  puts ask 'do you like chimichanga?'
+puts wets_bed 'So...uh...do you wet the bed?'
+
+#Would be nice to save replies in an array....If only.
+
+
