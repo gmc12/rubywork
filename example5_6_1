@@ -1,0 +1,4 @@
+puts 'What\'s your favorite number?'
+favoritenumber=gets.chomp
+plusone=favoritenumber.to_i + 1
+puts 'Here\'s a better number: ' + plusone.to_s + '. It works. But I\'m not sure it\'s good code.'.to_s
