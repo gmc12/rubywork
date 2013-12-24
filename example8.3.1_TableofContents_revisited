@@ -1,0 +1,10 @@
+#8.3 Table of Contents revisted
+contents=['Table of Contents', 'Chapter 1: Getting started', 'Chapter 2: Numbers', 'Chapter 3: Letters']
+page_num=['page 1', 'page 9', 'page 13']
+line_width=50
+puts contents[0].center(line_width) 
+puts contents[1].ljust(line_width) + page_num[0].rjust(line_width/25)
+puts contents[2].ljust(line_width) + page_num[1].rjust(line_width/25)
+puts contents[3].ljust(line_width) + page_num[2].rjust(line_width/25)
+
+# .center doesn't seem to center string relative to line width
